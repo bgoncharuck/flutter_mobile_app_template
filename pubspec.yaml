@@ -1,0 +1,30 @@
+name: bhoncharuk_flutter_template
+description: "general flutter template"
+publish_to: 'none'
+author: https://github.com/bgoncharuck
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.4.1
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  very_good_analysis: ^6.0.0
+
+flutter:
+  uses-material-design: false
+
+  assets:
+    - assets/
+    - .env
+
+# dart run flutter_native_splash:create
+flutter_native_splash:
+  background_image: splash.png
